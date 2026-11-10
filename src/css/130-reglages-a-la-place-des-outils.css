@@ -1,0 +1,18 @@
+/* ===== réglages à la place des outils (comme Aspire), croix bleue pour fermer ===== */
+.peekrow{position:sticky;top:-4px;height:0;z-index:7;display:flex;justify-content:flex-end;margin:0 -6px 0 0}
+.pane:not(.setm) .peekrow{display:none}
+.peektab{position:relative;top:0;display:grid;place-items:center;width:38px;height:24px;padding:0;border:0;border-radius:0 0 8px 8px;background:var(--accent);color:#fff;cursor:pointer;box-shadow:0 3px 8px rgb(0 0 0/.25)}
+.peektab svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s}
+.pane.peek .peektab svg{transform:rotate(180deg)}
+.peektab:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.pane.setm{display:flex;flex-direction:column;padding-top:28px}
+.pane.setm>*{flex:none}
+.pane[data-pane="dessin"].setm:not(.peek)>#dgrid,.pane[data-pane="dessin"].setm .layersblk,.pane[data-pane="dessin"].setm #dEmpty{display:none!important}
+.pane[data-pane="dessin"].setm.peek>#dgrid{padding-bottom:10px;margin-bottom:6px;border-bottom:1px solid var(--line)}
+.pane.setm.imgsel [data-sec="img"]>.dsec-h,.pane.setm.imgsel [data-sec="img"]>.impgrid,.pane.setm.imgsel #hImp{display:none!important}
+.setx{position:relative;top:2px;display:grid;place-items:center;width:30px;height:28px;padding:0;border:0;border-radius:7px;background:var(--accent);color:#fff;cursor:pointer;box-shadow:0 3px 8px rgb(0 0 0/.25)}
+.setx svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round}
+.setx:hover{filter:brightness(1.12)}.setx:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.setfoot{display:none}
+.pane.setm .setfoot{display:flex;justify-content:flex-end;margin-top:auto;position:sticky;bottom:-18px;padding:10px 0 12px;background:var(--panel);border-top:1px solid var(--line);z-index:5}
+.setfoot button{height:32px;padding:0 16px}

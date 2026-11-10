@@ -1,0 +1,12 @@
+/* menu du clic droit */
+.cmenu{position:fixed;z-index:90;min-width:230px;padding:4px;background:var(--panel);border:1px solid var(--line);border-radius:8px;box-shadow:0 10px 30px rgb(0 0 0/.35);display:grid;font-size:13px}
+.cmenu .cmh{padding:5px 10px 6px;font:600 11px var(--f-ui);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:280px}
+.cmi{position:relative;display:flex;align-items:center;gap:9px;height:30px;padding:0 10px 0 8px;border:0;border-radius:5px;background:transparent;color:var(--ink);font:inherit;text-align:left;cursor:pointer;white-space:nowrap}
+.cmi:hover,.cmi:focus-visible{background:var(--accent-soft,rgb(79 125 255/.18));outline:none}
+.cmi:disabled{opacity:.4;cursor:default;background:transparent}
+.cmi.danger{color:var(--danger,#e5534b)}
+.cmic{width:16px;height:16px;display:grid;place-items:center;flex:none}.cmic svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.cml{flex:1}.cmi kbd{font:500 10.5px var(--f-mono);color:var(--muted);margin-left:14px}.cmar{color:var(--muted);margin-left:10px}
+.cmsep{height:1px;background:var(--line);margin:4px 6px}
+.cmsub{position:absolute;left:100%;top:-5px;display:none}.cmsub.on{display:grid}
+

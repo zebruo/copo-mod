@@ -1,0 +1,18 @@
+/* top bar */
+.top{display:flex;align-items:center;gap:14px;flex-wrap:wrap;min-width:0}
+.brand{display:flex;align-items:center;gap:9px}
+.brand svg{width:30px;height:30px;color:var(--accent)}
+.brand b{font:700 21px/1 var(--f-head);letter-spacing:.01em;display:block}
+.brand span{font:500 11px/1 var(--f-head);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.filebar{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.sep{width:1px;height:22px;background:var(--line);margin:0 4px}
+.topstats{margin-left:auto;font:500 12px var(--f-mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.btn,.filebar button,.row button,.palette button,.tabs button,.seg button,.iconbtn{cursor:pointer}
+.filebar button,.row button,.stbar button,.optbar button{background:var(--raised);border:1px solid var(--line);border-radius:var(--r);padding:5px 10px;font-weight:500;display:inline-flex;align-items:center;gap:6px}
+.filebar button:hover,.row button:hover,.stbar button:hover{border-color:var(--accent)}
+.filebar button svg{width:16px;height:16px}
+button.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+button.primary:hover{filter:brightness(1.08)}
+button.danger{color:var(--danger)}
+button.armed{background:var(--danger);color:#fff;border-color:var(--danger)}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--accent);outline-offset:1px}

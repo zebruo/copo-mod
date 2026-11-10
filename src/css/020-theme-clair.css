@@ -1,0 +1,69 @@
+/* Thème clair « Établi clean » (choix dans Paramètres › Affichage ; le sombre reste par défaut) */
+:root[data-theme="light"]{
+  --bg:#FAF7F2; --panel:#F7F3ED; --raised:#EEE8DE; --input:#FCFAF6; --ink:#1E1C19; --muted:#5C564C; --line:#E6DFD3;
+  --accent:#3D6A9E; --accent-ink:#FFFDF8; --accent-soft:#D8DEE3; --accent-text:#2C5482; --top:#FAF7F2;
+  --canvas:#FAF7F2; --canvas3d:#FAF7F2; --grid:#EFE9DF; --grid2:#E3DCCF; --stock:#FFFDF8; --stock-edge:#C9B99C; --draw:#2B2925; --draw-muted:#5f5b55;
+  --pf:#c84a0c; --pk:#2F6FD6; --vc:#8a2fc0; --dr:#0f7d4d; --th:#ae3a0b; --rl:#0b877c; --danger:#c9402f; --warn:#d68a12; --guide:#0089b0;
+  --shadow:rgba(60,45,25,.10); --r:8px; color-scheme:light;
+}
+:root[data-theme="light"] :is(input[type=number],input[data-num],input[type=text],select,textarea){background:var(--input)}
+/* 1. outils du panneau sans cadre */
+:root[data-theme="light"] .dg-icons button{background:transparent;border-color:transparent;border-radius:8px}
+:root[data-theme="light"] .dg-icons button:hover:not(:disabled){background:var(--raised);border-color:transparent}
+:root[data-theme="light"] .dg-icons button[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent)}
+:root[data-theme="light"] [aria-pressed="true"] .ncur{fill:var(--accent);stroke:var(--accent)}
+/* 2. titres de groupe en petits labels */
+:root[data-theme="light"] .dg-group>span{font:500 11.5px var(--f-ui);letter-spacing:0;text-transform:none;color:var(--muted)}
+:root[data-theme="light"] .blk h3{font:500 12.5px var(--f-ui);letter-spacing:0;text-transform:none}
+/* 4. plus d'espace */
+:root[data-theme="light"] .dgrid{gap:16px 20px;padding:16px 0}
+:root[data-theme="light"] .dgrid .dg-icons{gap:2px}
+/* 5. onglets */
+:root[data-theme="light"] .tabs{background:var(--top)}
+:root[data-theme="light"] .tabs button{position:relative;letter-spacing:0;text-transform:none;font-weight:500;border:0;border-radius:8px 8px 0 0;white-space:nowrap}
+:root[data-theme="light"] .tabs button[aria-selected="true"]{background:var(--panel);color:var(--accent-text);font-weight:700;box-shadow:inset 0 2px 0 var(--accent-text),1px 0 0 var(--line),-1px 0 0 var(--line)}
+:root[data-theme="light"] .tabs button[aria-selected="true"] i{color:var(--accent-text)}
+/* 6. pas de bleu plein : bouton principal et interrupteurs */
+:root[data-theme="light"] button.primary,:root[data-theme="light"] .tb-body button.primary,:root[data-theme="light"] .v3d-bar button.primary,:root[data-theme="light"] .cowel .cw-btns button.primary,:root[data-theme="light"] .cobub button.primary,:root[data-theme="light"] .note button.primary,:root[data-theme="light"] .cfg-nav .mach-act button.primary{background:var(--accent-soft);color:var(--accent-text);border-color:#BCC8D3;font-weight:600}
+:root[data-theme="light"] .langsw button.on{background:var(--accent-soft);color:var(--accent-text)}
+:root[data-theme="light"] .seg button[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent-text)}
+:root[data-theme="light"] .fbar button.tg.on,:root[data-theme="light"] .fbar button[aria-pressed="true"]{background:var(--accent-soft);border-color:transparent;color:var(--accent)}
+/* 7. calque actif */
+:root[data-theme="light"] .layer{border-color:transparent;border-radius:8px}
+:root[data-theme="light"] .layer.on{background:var(--accent-soft);border-color:transparent}
+:root[data-theme="light"] .layer input[type=text]{background:transparent}:root[data-theme="light"] .layer.on input[type=text]{color:var(--accent-text);font-weight:600}
+/* 3. coins arrondis ; 8. panneau / vues ; barres flottantes */
+:root[data-theme="light"] .panel{box-shadow:1px 0 0 var(--line),3px 0 10px rgba(60,45,25,.07);position:relative;z-index:1}
+:root[data-theme="light"] .fbar{border-radius:10px;box-shadow:0 2px 10px var(--shadow)}
+:root[data-theme="light"] .fbar button{border-radius:8px}
+/* 10. pas de trait au-dessus de l'aide « Choisissez une fonction… » */
+:root[data-theme="light"] .dgrid{border-bottom:0}
+/* boutons et recherches laissés au style du navigateur (bibliothèques) : même allure que le reste */
+:root[data-theme="light"] button.primary{border-style:solid;border-width:1px;border-radius:8px}
+:root[data-theme="light"] :is(#lib,#dlib) :is(button.libio,.libfoot button:not(.primary)){background:var(--raised);border:1px solid var(--line);border-radius:8px;padding:5px 10px;color:var(--ink);cursor:pointer}
+:root[data-theme="light"] :is(#lib,#dlib) :is(button.libio,.libfoot button:not(.primary)):hover:not(:disabled){border-color:#BCC8D3;background:#E7E0D4}
+:root[data-theme="light"] input[type=search],:root[data-theme="light"] #dlibSearch,:root[data-theme="light"] #libSearch{background:var(--input);border:1px solid var(--line);border-radius:8px;padding:5px 8px;color:var(--ink)}
+/* textes posés sur les vues 2D et 3D : sans ombre floue, gris foncé doux */
+:root[data-theme="light"] :is(.cvinfo,.rvinfo,.v3stat){text-shadow:none;color:var(--muted)}
+:root[data-theme="light"] .setx,:root[data-theme="light"] .peektab{background:var(--accent-soft);color:var(--accent-text);box-shadow:0 2px 6px var(--shadow)}
+:root[data-theme="light"] .setx:focus-visible{outline-color:var(--accent)}
+:root[data-theme="light"] .cfg-nav button:hover{background:var(--raised)}
+:root[data-theme="light"] .cfg-nav button.on{background:var(--accent-soft);color:var(--accent-text)}
+:root[data-theme="light"] .sh-view{background:#E9E3D8}
+:root[data-theme="light"] .txil{background:#E9E2D6}:root[data-theme="light"] .txil .tl{fill:#2B2925}:root[data-theme="light"] .txil .tb{stroke:#3D6A9E}
+/* oranges d'avertissement : un ton plus sombre pour rester lisibles sur fond clair */
+:root[data-theme="light"] .hint.warn{background:color-mix(in srgb,#d68a12 16%,transparent);border-left-color:#d68a12}
+:root[data-theme="light"] .libest{background:color-mix(in srgb,#d68a12 16%,transparent)}
+:root[data-theme="light"] .newhat b,:root[data-theme="light"] .gr-warn,:root[data-theme="light"] .pjwarn{color:#a85f00}
+:root[data-theme="light"] .tpbad.wrn{background:#d68a12}
+:root[data-theme="light"] #tip{background:#FFFDF8;box-shadow:0 4px 14px var(--shadow)}
+:root[data-theme="light"] .toast{box-shadow:0 4px 18px var(--shadow)}
+
+[hidden]{display:none!important}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.4 var(--f-ui);-webkit-text-size-adjust:100%}
+img{max-width:100%}
+*{box-sizing:border-box}
+button,input,select,textarea{font:inherit;color:inherit}
+.app{display:grid;grid-template-rows:auto minmax(0,1fr);gap:10px;height:100%;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:10px}
