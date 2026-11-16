@@ -1,0 +1,4 @@
+
+@font-face{font-family:"COPO Sans";font-style:normal;font-weight:200 900;font-display:swap;src:local("Source Sans 3"),url("lib/fonts/SourceSans3.ttf") format("truetype")}
+@font-face{font-family:"COPO Sans";font-style:italic;font-weight:200 900;font-display:swap;src:local("Source Sans 3 Italic"),url("lib/fonts/SourceSans3-Italic.ttf") format("truetype")}
+@font-face{font-family:"COPO Mono";font-style:normal;font-weight:100 800;font-display:swap;src:local("JetBrains Mono"),url("lib/fonts/JetBrainsMono.ttf") format("truetype")}

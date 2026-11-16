@@ -1,0 +1,12 @@
+/* Layout : façon VectorCraft — barre de menus | outils à gauche | plan gris (table de montage) | propriétés à droite. Thème sombre unique, assumé. */
+:root{
+  --bg:#262626; --panel:#323232; --raised:#3d3d3d; --ink:#e8e8e8; --muted:#a8a8a8; --line:#4a4a4a;
+  --accent:#4f7cff; --accent-ink:#ffffff; --accent-soft:#34406a;
+  --canvas:#535353; --grid:#5a5a5a; --grid2:#626262; --stock:#f1ece2; --stock-edge:#9a8a6a; --draw:#161616; --draw-muted:#6b6b6b;
+  --pf:#e2560f; --pk:#1f6fe0; --vc:#9b3ad1; --dr:#12935a; --th:#c2410c; --rl:#0f9b8e; --danger:#ff6b5b; --warn:#f0b43c; --guide:#00a8d8;
+  --f-ui:"Source Sans 3","COPO Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-head:"Source Sans 3","COPO Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono","COPO Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;
+  --r:5px; color-scheme:dark;
+  --input:var(--raised); --top:var(--bg); --accent-text:var(--ink); --canvas3d:var(--canvas); --shadow:rgb(0 0 0 / .35);
+}
